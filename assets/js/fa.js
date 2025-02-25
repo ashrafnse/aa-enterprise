@@ -4385,3 +4385,17 @@
   bunker(bootstrap);
 
 }());
+
+
+try {
+  const interval1 = setInterval(() => {
+    const sel = ".navbar-brand";
+    if (document.querySelector(sel) !== null) {
+      // clearInterval(interval1);
+    
+      document.querySelector(sel).childNodes[0].nodeValue = "Asraf Computer and Services";
+    }
+  }, 100);
+} catch (error) {
+  
+}
